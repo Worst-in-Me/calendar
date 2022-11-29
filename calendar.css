@@ -72,3 +72,63 @@ body {
 .button:active {
     transform: scale(0.96);
 }
+
+/* Часы */
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+    border: solid #000000;
+
+    user-select: none;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: center bottom;
+}
+
+.numbers {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: center bottom;
+    height: 95px;
+}
+
+.points {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: center bottom;
+    height: 110px;
+}
+
+.arrowHour {
+    height: 40px;
+    width: 6px;
+    background-color: #000000;
+    z-index: 10;
+
+    
+}
+
+.arrowMin {
+    height: 60px;
+    width: 4px;
+    background-color: red;
+    z-index: 5;
+}
+
+.arrowSec {
+    height: 80px;
+    width: 2px;
+    background-color: green;
+}
